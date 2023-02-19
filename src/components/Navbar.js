@@ -204,7 +204,7 @@ const Navbar = () => {
           </a>
         </NavIcon>
 
-        <StyledBurger open={open} onClick={handleClick}>
+        <StyledBurger  onClick={handleClick}>
           <div />
           <div />
           <div />
