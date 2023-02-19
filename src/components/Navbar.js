@@ -166,8 +166,8 @@ const Navbar = () => {
             <img src={logo} id="#home" alt="" />
           </a>
         </div>
-        <NavLink open={open} onClick={()=>setOpen(false)}>
-          <ul className="links">
+        <NavLink open={open} >
+          <ul className="links" onClick={()=>setOpen(false)}>
             <li>
               <a href="#home">Home</a>
             </li>
