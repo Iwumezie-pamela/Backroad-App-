@@ -157,6 +157,7 @@ const Navbar = () => {
   const handleClick = () => {
     setOpen((prevOpen) => !prevOpen);
   };
+  
   return (
     <Nav className="nav">
       <div className="nav--body">
@@ -165,7 +166,7 @@ const Navbar = () => {
             <img src={logo} id="#home" alt="" />
           </a>
         </div>
-        <NavLink open={open}>
+        <NavLink open={open} onClick={()=>setOpen(false)}>
           <ul className="links">
             <li>
               <a href="#home">Home</a>
